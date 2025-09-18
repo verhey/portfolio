@@ -9,19 +9,18 @@
     {% seo "" %}
   </head>
   <body>
-  <main>
-    {{ content | safe }}
-      <footer class="footer">
-        <div class="links">
+    <div class="site-container">
+      <aside class="sidebar">
+        <nav class="nav-links">
           <a href="/">Home</a>
-          <span class="divider">|</span>
           <a href="/posts">Posts</a>
-          <span class="divider">|</span>
           <a href="/about">About</a>
-          <span class="divider">|</span>
           <a href="/cv">Résumé</a>
-        </div>
-      </footer>
-  </main>
+        </nav>
+      </aside>
+      <main class="main-content">
+        {{ content | safe }}
+      </main>
+    </div>
   </body>
 </html>
