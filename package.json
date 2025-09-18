@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "My personal site, based off glitch-hello-eleventy",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "NODE_ENV=production eleventy"
+  },
+  "dependencies": {
+    "eleventy-plugin-seo": "0.5.2",
+    "luxon": "^3.4.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "url": "https://github.com/verhey/portfolio"
+  },
+  "license": "MIT"
+}
