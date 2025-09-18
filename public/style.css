@@ -1,8 +1,10 @@
 :root {
-    --color-bg: #8fbcbb;
-    --color-text-main: #000000;
-    --color-primary: #5e81ac;
-    --color-headers: #2e3440;
+    --color-bg: #f8f9fa;
+    --color-text-main: #495057;
+    --color-primary: #adb5bd;
+    --color-headers: #212529;
+    --color-accent: #6f7c87;
+    --color-sidebar: #f1f3f4;
     --wrapper-height: 85vh;
     --image-max-width: 320px;
     --font-family: "HK Grotesk", "Georgia", "serif";
