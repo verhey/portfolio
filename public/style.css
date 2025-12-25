@@ -10,8 +10,11 @@
     --color-sidebar-hover: #e4e4e7;
     --wrapper-height: 85vh;
     --image-max-width: 320px;
-    --font-family: "HK Grotesk", "Georgia", "serif";
+    --font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
 }
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Basic page style resets */
 * {
@@ -20,20 +23,6 @@
 [hidden] {
     display: none !important;
 }
-
-/* Import fonts */
-@font-face {
-    font-family: HK Grotesk;
-    src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-        format("opentype");
-}
-@font-face {
-    font-family: HK Grotesk;
-    font-weight: bold;
-    src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-        format("opentype");
-}
-
 /* Sidebar navigation */
 .site-container {
     display: flex;
