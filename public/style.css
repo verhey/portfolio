@@ -6,8 +6,7 @@
     --color-primary-dark: #0f766e;
     --color-headers: #18181b;
     --color-accent: #0d9488;
-    --color-sidebar: #f4f4f5;
-    --color-sidebar-hover: #e4e4e7;
+    --color-nav-hover: #e4e4e7;
     --wrapper-height: 85vh;
     --image-max-width: 320px;
     --font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
@@ -23,86 +22,101 @@
 [hidden] {
     display: none !important;
 }
-/* Sidebar navigation */
+/* Top navigation */
 .site-container {
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
-.sidebar {
-    width: 200px;
-    min-height: 100vh;
-    background-color: var(--color-sidebar);
-    border-right: 2px solid var(--color-primary-light);
+.top-nav {
     position: fixed;
-    left: 0;
     top: 0;
-    padding: 2rem 1rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--color-bg);
+    border-bottom: 2px solid var(--color-primary-light);
+}
+
+.site-name,
+.site-name:link,
+.site-name:visited {
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-headers);
+    text-decoration: none;
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-name:hover {
+    color: var(--color-primary);
+    background: none;
 }
 
 .nav-links {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 0.5rem;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-links a:link,
+.nav-links a:visited {
     font-family: var(--font-family);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 400;
     color: var(--color-text-main);
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
+    margin: 0;
+    border-radius: 6px;
+    border-bottom: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .nav-links a:hover {
-    background: var(--color-sidebar-hover);
-    color: var(--color-primary);
+    background: var(--color-primary-light);
+    color: var(--color-primary-dark);
 }
 
 /* Mobile responsive design */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        min-height: auto;
-        position: relative;
-        border-right: none;
-        border-bottom: 2px solid var(--color-primary-light);
+@media (max-width: 640px) {
+    .top-nav {
+        flex-direction: column;
+        gap: 0.75rem;
         padding: 1rem;
     }
 
     .nav-links {
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 0.5rem;
+        gap: 0.25rem;
     }
 
     .nav-links a {
-        padding: 0.5rem;
-        font-size: 1rem;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
     }
 
     .main-content {
-        margin-left: 0;
-        margin: 0 auto;
-        padding: 0.5rem 1rem;
-    }
-
-    .site-container {
-        flex-direction: column;
+        padding: 1rem;
     }
 }
 
 /* Page structure */
 .main-content {
     flex: 1;
-    margin-left: 200px;
-    max-width: 900px;
-    margin: 0 auto 0 200px;
-    padding: 1rem 2rem;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    padding-top: calc(80px + 2rem); /* Account for fixed nav height */
 }
 body {
     font-family: var(--font-family);
@@ -174,9 +188,9 @@ ul.no-bullet {
     list-style-type: none;
 }
 
-/* Link styles */
-a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
+/* Link styles (content links only) */
+.main-content a:link,
+.main-content a:visited {
     text-decoration: none;
     border-bottom: 2px solid var(--color-primary-light);
     color: var(--color-primary-dark);
@@ -185,7 +199,7 @@ a:not(.btn--remix):visited {
     border-radius: 3px;
     transition: all 0.2s ease;
 }
-a:hover {
+.main-content a:hover {
     background: var(--color-primary-light);
     border-bottom-color: var(--color-primary);
     color: var(--color-primary-dark);
