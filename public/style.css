@@ -123,6 +123,42 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text-main);
 }
+
+/* Page load animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.top-nav {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.main-content {
+    animation: fadeInUp 0.35s ease-out 0.05s both;
+}
+
+.main-content h1 {
+    animation: fadeInUp 0.35s ease-out 0.1s both;
+}
+
+.main-content p,
+.main-content ul,
+.main-content h2,
+.main-content h3 {
+    animation: fadeInUp 0.3s ease-out 0.15s both;
+}
 .wrapper {
     min-height: var(--wrapper-height);
     margin: 1rem 0 0;
