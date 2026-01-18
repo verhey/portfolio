@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "description": "My personal site, based off glitch-hello-eleventy",
+  "description": "My personal site",
   "scripts": {
     "start": "eleventy --serve",
     "build": "NODE_ENV=production eleventy"

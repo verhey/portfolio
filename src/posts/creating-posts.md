@@ -9,7 +9,7 @@ layout: layouts/post.njk
 
 ## What is this site?
 
-The body of your posts will be in Markdown. With Glitch, you can edit Markdown right in the editor, and the preview will update as you type. While you work you can switch between editing Markdown and seeing a preview of your formatted text by toggling the __Markdown__ button just above the editor window.
+The body of your posts will be in Markdown. You can edit Markdown in any text editor, and see the results when you build the site.
 
 
 ## How's it made?
@@ -20,7 +20,7 @@ Any values you include in the front matter are accessible in the template (e.g. 
 
 ## What can I expect to find on it?
 
-Click the three little dots next to the `/posts` folder in Glitch and add a new file, naming it `my-first-post.md`.
+Create a new file in the `/posts` folder, naming it `my-first-post.md`.
 
 Add the following content to your new post, including the front matter and one line of text content:
 
