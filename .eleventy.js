@@ -1,7 +1,17 @@
 const { DateTime } = require("luxon");
 const pluginSEO = require("eleventy-plugin-seo");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
+const site = {
+  name: "Dean Verhey",
+  url: "https://verhey.me",
+  description: "The personal site of Dean Verhey",
+  author: "Dean Verhey",
+};
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addGlobalData("site", site);
+
   eleventyConfig.setTemplateFormats([
     // Templates:
     "html",
@@ -19,13 +29,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("public");
 
   eleventyConfig.addPlugin(pluginSEO, {
-    title: "Dean Verhey",
-    description: "The personal site of Dean Verhey",
-    url: "https://foo.com",
-    author: "Dean Verhey",
-    // twitter: "username",
-    image: "foo.jpg",
+    title: site.name,
+    description: site.description,
+    url: site.url,
+    author: site.author,
   });
+
+  eleventyConfig.addPlugin(pluginRss);
 
   // Filters let you modify the content https://www.11ty.dev/docs/filters/
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
