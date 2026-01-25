@@ -42,6 +42,14 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
+  eleventyConfig.addFilter("readTime", (content) => {
+    const wordsPerMinute = 200;
+    const text = content.replace(/<[^>]*>/g, ""); // strip HTML tags
+    const words = text.trim().split(/\s+/).length;
+    const minutes = Math.ceil(words / wordsPerMinute);
+    return minutes === 1 ? "1 min read" : `${minutes} min read`;
+  });
+
   // Configure the Eleventy Dev Server (replaces BrowserSync in v3.x)
   eleventyConfig.setServerOptions({
     // Disable live reload mirroring of scrolling, clicks, form inputs

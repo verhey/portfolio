@@ -4,7 +4,7 @@ layout: layouts/page.njk
 
 # My resume/CV
 
-For the past few years I've worked primarily in data platforms, though my first jobs in tech were in full-stack web development in PHP/Jquery/Wordpress/other monstrosities. I've done a lot of things, though you probably don't want me to write PHP or Wordpress anymore. If you'd like to get in touch, see the [about page](/about) on this site.
+For the past few years I've worked primarily in data platforms, though my first jobs in tech were in full-stack web development in PHP, Jquery, and Wordpress. Prior to that, I taught myself to code by making little Wordpress sites for myself. If you'd like to get in touch, see the [about page](/about) on this site.
 
 ### Jobs (Things that paid me)
 
