@@ -1,6 +1,6 @@
 # portfolio
 
-My personal portfolio website built with Eleventy.
+My personal portfolio website built with Eleventy. See a published version at [verhey.me](https://verhey.me)
 
 ## Prerequisites
 
