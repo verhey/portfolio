@@ -8,7 +8,7 @@ For the past few years I've worked primarily in data platforms, though my first 
 
 ### Jobs (Things that paid me)
 
-* 🏦💵 **[Anrok](https://anrok.com) - _July 2015 -> Present_**
+* 🏦💵 **[Anrok](https://anrok.com) - _July 2025 -> Present_**
   * I currently work at Anrok, a series B sales tax compliance startup, where I joined as their first data platform hire.
 * 🏴🏳️ **[LaunchDarkly](https://launchdarkly.com/) - _October 2021 -> July 2025_**
   * I was an early hire on LaunchDarkly's internal data team and helped grow that team 3x and mature our internal analytics. I later moved to the core data platform team to work the streaming and microbatch data platforms powering pretty much anything in the LaunchDarkly platform that relies on data.
