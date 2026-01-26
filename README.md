@@ -4,7 +4,7 @@ My personal portfolio website built with Eleventy. See a published version at [v
 
 ## Prerequisites
 
-- Node.js (version 16 or higher)
+- Node.js (version 20 or higher)
 - npm
 
 ## Installation
