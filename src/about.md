@@ -24,6 +24,6 @@ If you'd like to get ahold of me you can contact me via:
 
 I'm not active on social media, but for other random places I am on the web, see:
 
-* 💻 [Github](https://github.com/verhey)
+* 💻 [GitHub](https://github.com/verhey)
 * 🔊 [Discogs](https://www.discogs.com/user/verhey/collection)
 * 🎵 [last.fm](https://www.last.fm/user/deanverhey)

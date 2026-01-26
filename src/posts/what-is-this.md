@@ -11,7 +11,7 @@ This is a portfolio/personal website for me, Dean Verhey. For more on me see the
 
 It's a static site built with [Eleventy](https://www.11ty.dev/), hosted on Netlify, and styled with plain CSS. The source is on [GitHub](https://github.com/verhey/portfolio) if you want to poke around.
 
-It is intentionally kept feature-light - while I'm happy with React, Tailwind, Typescript, and other frameworks for larger, more complex projects, at this time this doesn't need to be anything more than a simple static site.
+It is intentionally kept feature-light - while I'm happy with React, Tailwind, TypeScript, and other frameworks for larger, more complex projects, at this time this doesn't need to be anything more than a simple static site.
 
 The theme was forked from [glitch-hello-eleventy](https://github.com/glitchdotcom/glitch-hello-eleventy) once upon a time but has since diverged quite a bit.
 
