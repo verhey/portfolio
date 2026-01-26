@@ -1,7 +1,7 @@
 ---
 title: What is this site?
 description: What's this site about? What's it made of? Who is it for?
-date: 2026-01-10
+date: 2025-01-10
 layout: layouts/post.njk
 ---
 

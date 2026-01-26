@@ -58,7 +58,9 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("posts", function (collection) {
-    const coll = collection.getFilteredByTag("posts");
+    const coll = [...collection.getFilteredByTag("posts")].sort((a, b) => {
+      return b.date - a.date; // newest first (descending)
+    });
 
     for (let i = 0; i < coll.length; i++) {
       const prevPost = coll[i - 1];
