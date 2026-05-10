@@ -23,3 +23,18 @@ jobs:
 
       - name: Build site
         run: npm run build
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # verhey.me: skip self-canonicals (404 until deploy lands).
+          # linkedin.com: rotates between status codes for bot protection, annoying
+          # accept 403/600: bot-protection responses from real profile pages (Discogs/Last.fm).
+          args: >-
+            --root-dir ${{ github.workspace }}/build
+            --exclude 'verhey\.me'
+            --exclude 'linkedin\.com'
+            --accept '200..=299,403,600'
+            --no-progress
+            './build/**/*.html'
+          fail: true
