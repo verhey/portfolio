@@ -1,6 +1,6 @@
 ---
 title: "AWS Big Data Blog: How LaunchDarkly migrated to Amazon MWAA"
-description: An external post on the AWS Big Data blog about LaunchDarkly's usage of AWS MWAA
+description: A post on the AWS Big Data blog about LaunchDarkly's usage of AWS MWAA
 date: 2025-05-16
 layout: layouts/post.njk
 ---

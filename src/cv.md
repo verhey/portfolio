@@ -34,7 +34,7 @@ For the past few years I've worked primarily in data platforms and infrastructur
 
 ### Volunteering (Things I did for free)
 
-* In collaboration with colleagues at LaunchDarkly and Amazon Web Services, wrote and [published a post on the AWS Big Data Blog](/posts/external-aws/) about how we modernized data orchestration at LD.
+* In collaboration with colleagues at LaunchDarkly and Amazon Web Services, wrote and [published a post on the AWS Big Data Blog](/posts/launchdarkly-mwaa/) about how we modernized data orchestration at LD.
 * I spoke at August 2023's [Seattle dbt users meetup](https://www.meetup.com/seattle-dbt-meetup/) about the evolution of our dbt Core and Apache Airflow batch processing pipelines at LaunchDarkly. It wasn't recorded, but you can see [the slides](https://dean-meetup-slides.netlify.app/1).
 * I've been a guest lecturer for [CodeNation's](https://codenation.org/) Career Launch Intensive, covering technology interviewing and general early career guidance.
 * Every few years I give a talk at Western Washington University's [Management Information Systems Association](https://cbe.wwu.edu/dsci/management-information-systems) about data careers.
