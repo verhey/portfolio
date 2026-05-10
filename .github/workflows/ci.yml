@@ -23,3 +23,9 @@ jobs:
 
       - name: Build site
         run: npm run build
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress './build/**/*.html'
+          fail: true
