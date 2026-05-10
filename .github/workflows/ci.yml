@@ -35,6 +35,7 @@ jobs:
             --exclude 'verhey\.me'
             --exclude 'linkedin\.com'
             --accept '200..=299,403,600'
+            --require-https
             --no-progress
             './build/**/*.html'
           fail: true
