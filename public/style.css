@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
     --color-bg: #fafaf9;
     --color-text-main: #3f3f46;
@@ -11,9 +13,6 @@
     --image-max-width: 320px;
     --font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
 }
-
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Basic page style resets */
 * {

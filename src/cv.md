@@ -8,9 +8,9 @@ For the past few years I've worked primarily in data platforms and infrastructur
 
 ### Jobs (Things that paid me)
 
-* 📊🔎 **[Fieldguide](http://fieldguide.io/) - _April 2026 -> Present_**
+* 📊🔎 **[Fieldguide](https://www.fieldguide.io/) - _April 2026 -> Present_**
   * I currently work on Fieldguide's infra platform team, where I'm working on scaling our existing AWS infrastructure to multiple regions, clouds, and FedRAMP compliance.
-* 🏦💵 **[Anrok](https://anrok.com) - _July 2025 -> April 2026_**
+* 🏦💵 **[Anrok](https://www.anrok.com/) - _July 2025 -> April 2026_**
   * I was the first (and for a while only) data hire at Anrok, a sales tax compliance startup. My work was focused on standing up a foundational data platform and improving our observability infrastructure as the company scaled.
 * 🏴🏳️ **[LaunchDarkly](https://launchdarkly.com/) - _October 2021 -> July 2025_**
   * I was an early hire on LaunchDarkly's internal data team and helped grow that team 3x while maturing and stabilizing our internal analytics. I later moved to the core data platform team to work on the streaming and microbatch data platforms powering pretty much anything in the LaunchDarkly platform that relies on data.

@@ -1,6 +1,6 @@
-const { DateTime } = require("luxon");
-const pluginSEO = require("eleventy-plugin-seo");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+import { DateTime } from "luxon";
+import pluginSEO from "eleventy-plugin-seo";
+import pluginRss from "@11ty/eleventy-plugin-rss";
 
 const site = {
   name: "Dean Verhey",
@@ -9,15 +9,13 @@ const site = {
   author: "Dean Verhey",
 };
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addGlobalData("site", site);
 
   eleventyConfig.setTemplateFormats([
-    // Templates:
     "html",
     "njk",
     "md",
-    // Static Assets:
     "css",
     "jpeg",
     "jpg",
@@ -37,7 +35,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
 
-  // Filters let you modify the content https://www.11ty.dev/docs/filters/
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
@@ -48,22 +45,20 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("readTime", (content) => {
     const wordsPerMinute = 200;
-    const text = content.replace(/<[^>]*>/g, ""); // strip HTML tags
+    const text = content.replace(/<[^>]*>/g, "");
     const words = text.trim().split(/\s+/).length;
     const minutes = Math.ceil(words / wordsPerMinute);
     return minutes === 1 ? "1 min read" : `${minutes} min read`;
   });
 
-  // Configure the Eleventy Dev Server (replaces BrowserSync in v3.x)
   eleventyConfig.setServerOptions({
-    // Disable live reload mirroring of scrolling, clicks, form inputs
     domDiff: true,
     port: 8080,
   });
 
   eleventyConfig.addCollection("posts", function (collection) {
     const coll = [...collection.getFilteredByTag("posts")].sort((a, b) => {
-      return b.date - a.date; // newest first (descending)
+      return b.date - a.date;
     });
 
     for (let i = 0; i < coll.length; i++) {
@@ -84,4 +79,4 @@ module.exports = function (eleventyConfig) {
       output: "build",
     },
   };
-};
+}
