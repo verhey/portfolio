@@ -39,6 +39,10 @@ export default function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
+  eleventyConfig.addFilter("w3DateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
   eleventyConfig.addFilter("readTime", (content) => {
     const wordsPerMinute = 200;
     const text = content.replace(/<[^>]*>/g, "");
